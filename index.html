@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+<div class="container">
+<section id="aboutme">
+    <div class="TextContainer">
+        <div class="animate__animated animate__fadeIn title">About Me</div>
+        <div class="animate__animated animate__zoomIn animate__delay-1s" id="main-text">Hi! Welcome!</div>
+        <div id="content-textaboutme"></div>
+       <div> <img class="pict" src="slika2.jpg"></div>
+
+        <div class="buttons">
+           <button class="animate__animated animate__fadeIn"> <a href="projects.html">Projects</a></button>
+           <button class="animate__animated animate__fadeIn"> <a href="resume.html">Resume</a></button>
+        </div>
+
+        </div>
+</section>
+
+</div>
+<div id="footer">Contact me: amatanasovska@yahoo.com</div>
+</body>
+<script>
+    var i = 0;
+    var txt = 'Nice to meet you! My name is Ana Marija and I am coding and mathematics enthusiast.' +
+        'Right now I am studying Computer Science at the Faculty of Computer Science and Engineering in Skopje.' +
+        'Click on the buttons below to learn more about me.'; /* The text */
+    var speed = 20; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("content-textaboutme").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter();
+</script>
+</html>
