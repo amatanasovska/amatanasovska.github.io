@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+
+<div class="container">
+
+    <section id="projects">
+
+        <div class="TextContainerProjects">
+            <div class="animate__animated animate__fadeIn title">Projects</div>
+
+            <div id="main-text"></div>
+            <div class="projects">
+                <div class="projectCont" id="project1">
+                    <div id="projTitle1" class="projTitle animate__animated">ShopApp</div>
+                    <div class="overlay content-text"><div class="positionTxt">Written in Python (Tkinkter, Sqlite).
+                        Basic application that imitates the applications in
+                        the super- markets, you type in the barcode to get
+                        information for a product and id for a customer to
+                        get the information for the customer.
+                    </div>
+                    </div>
+
+
+                </div>
+                <div class="projectCont" id="project2">
+                    <div id="projTitle2" class="projTitle animate__animated">Roulette App</div>
+                    <div class="overlay content-text"><div class="positionTxt">Used JavaScript(jQuery), CSS, HTML, Python(Flask,
+                        Sqlite)Based on the concepts I have learned in the Python
+                        2 course.
+                        Basic Roulette application. You can sign up, add
+                        credits, sign in, play with your credits…
+
+                    </div>
+                    </div>
+
+
+                </div>
+                <div class="projectCont" id="project3">
+                    <div id="projTitle3" class="projTitle animate__animated">Pomodoro Timer</div>
+                    <div class="overlay content-text"><div class="positionTxt">Basic Android Application coded in Kotlin,
+                        Pomodoro is a focus technique. This timer is an
+                        application which includes 25 minutes of work
+                        followed by 15 minutes break and counts the cycles
+                        of work you did.
+
+                    </div>
+                    </div>
+
+
+                </div>
+                <div class="projectCont" id="project4">
+                    <div id="projTitle4" class="projTitle animate__animated">COVID statistics</div>
+                    <div class="overlay content-text"><div class="positionTxt">A project I am currently working on, visualization of the data in Chart.js.
+
+                    </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <div class="projectButtons">
+                <button><a href="aboutme.html">Back to About Me</a></button>
+                  <button><a href="resume.html">Explore my resume</a></button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+</div>
+<div id="footer">Contact me: amatanasovska@yahoo.com</div>
+</body>
+<script>
+    var i = 0;
+    var txt = 'Coming soon! Hover for more information'; /* The text */
+    var speed = 20; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("main-text").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter();
+    var title1=document.getElementById("project1");
+
+    title1.onmouseover=function (){
+        title1.classList.add("selected");
+        // title1.classList.add("animate__fadeIn");
+    }
+    title1.onmouseout=function()
+    {
+        title1.classList.remove("selected");
+        // title1.classList.remove("animate__fadeIn");
+    }
+    var title2=document.getElementById("project2");
+
+    title2.onmouseover=function (){
+        title2.classList.add("selected");
+        // title2.classList.add("animate__fadeIn");
+    }
+    title2.onmouseout=function()
+    {
+        title2.classList.remove("selected");
+        // title2.classList.remove("animate__fadeIn");
+    }
+    var title3=document.getElementById("project3");
+
+    title3.onmouseover=function (){
+        title3.classList.add("selected");
+        // title3.classList.add("animate__fadeIn");
+    }
+    title3.onmouseout=function()
+    {
+        title3.classList.remove("selected");
+        // title3.classList.remove("animate__fadeIn");
+    }
+    var title4=document.getElementById("project4");
+
+    title4.onmouseover=function (){
+        title4.classList.add("selected");
+        // title4.classList.add("animate__fadeIn");
+    }
+    title4.onmouseout=function()
+    {
+        title4.classList.remove("selected");
+        // title4.classList.remove("animate__fadeIn");
+    }
+</script>
+</html>
