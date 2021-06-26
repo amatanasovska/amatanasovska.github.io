@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+<div class="container">
+
+    <section id="resume">
+
+        <div class="TextContainerProjects">
+            <div class="animate__animated animate__fadeIn title">Resume</div>
+
+            <div id="main-text"></div>
+            <div class="projects">
+                <div class="projectCont">
+                    <div class="projTitle">Courses</div>
+                    <div class="content-text animate__animated animate__fadeIn animate__delay"><div class="positionTxt">Attended courses Python I and Python II at Semos Education, Skopje.
+                    </div></div>
+                </div>
+
+                <div class="projectCont">
+                    <div class="projTitle">Faculty</div>
+                    <div class="content-text animate__animated animate__fadeIn animate__delay-1s"><div class="positionTxt">Studying Computer Science at Faculty Of Computer Science and Engineering, Skopje since 2020
+                    </div></div>
+                </div>
+
+                <div class="projectCont">
+                    <div class="projTitle">Work Experience</div>
+                    <div class="content-text animate__animated animate__fadeIn animate__delay-2s"><div class="positionTxt">Not yet, but I would love to change that! Contact me on amatanasovska@yahoo.com.
+                    </div></div>
+                </div>
+            </div>
+            <div class="projectButtons">
+               <button> <a href="aboutme.html">Back to About Me</a></button>
+               <button> <a href="projects.html">Check my projects</a></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+</div>
+<div id="footer">Contact me: amatanasovska@yahoo.com</div>
+
+</body>
+<script>
+    var i = 0;
+    var txt = 'Education'; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("main-text").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+    typeWriter();
+
+
+</script>
+</html>
